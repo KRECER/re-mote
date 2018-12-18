@@ -1,0 +1,21 @@
+.form {
+	input, textarea {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 7px 15px;
+
+		@include placeholder(#E0E0E0);
+		border-radius: 5px;
+		border: 1px solid #BDBDBD;
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+
+	&__button {
+		display: block;
+		margin: 0 auto;
+	}
+}
