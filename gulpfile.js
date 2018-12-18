@@ -114,6 +114,11 @@ gulp.task('server', function () {
   gulp.watch(paths.fonts.watch, gulp.parallel('fonts'));
 });
 
+gulp.task('deploy:ghpages', function() {
+	return gulp.src('build/**/*')
+		.pipe(ghPages());
+});
+
 
 gulp.task('build', gulp.series(
   'clean',
