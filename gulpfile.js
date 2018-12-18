@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   concat = require("gulp-concat"),
   rename = require("gulp-rename"),
   imagemin = require('gulp-imagemin'),
-  plumber = require('gulp-plumber');
+	plumber = require('gulp-plumber'),
+	ghPages = require('gulp-gh-pages');
 
 
 var paths = {
